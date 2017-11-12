@@ -3867,13 +3867,13 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 
 .client {
 	display: inline-block;
-	width: 183px;
+	width: auto;
 
 	margin: 0 10px 20px;
 }
 
 .client:hover img {
-	opacity: 0.8;
+	opacity: 0.3;
 }
 
 .client a, .b-client img {
@@ -3882,7 +3882,7 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 
 .client img {
 	max-width: 100%;
-	opacity: 0.3;
+	opacity: 0.9;
 
 	-webkit-transition: opacity 0.2s ease-in-out;
 	transition: opacity 0.2s ease-in-out;
@@ -3891,7 +3891,7 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 /*----------------------------------------------------*/
 
 .b-clients.m-small .client {
-	width: 149px;
+	width: auto;
 }
 
 /*													  	 Team ^
