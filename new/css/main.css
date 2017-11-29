@@ -1534,7 +1534,7 @@ i.ita {
 	position: relative;
 	padding: 0;
 	overflow: hidden !important;
-	margin-bottom: -1px;
+	margin-bottom: -1 px;
 }
 
 .fullwidthbanner-container .fullwidthbanner3,

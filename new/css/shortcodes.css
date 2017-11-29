@@ -3867,8 +3867,7 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 
 .client {
 	display: inline-block;
-	width: auto;
-
+	width: 105px;
 	margin: 0 10px 20px;
 }
 
