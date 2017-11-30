@@ -1,3 +1,2 @@
-This is AGV Website created by Rahul Kumar!!
-Thanku Folks !! 
-Peace :P !
+professor - 493*369
+team - 750*500
