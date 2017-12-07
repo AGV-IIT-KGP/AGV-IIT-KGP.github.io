@@ -1,172 +1,19 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-	<title>Autonomous Ground Vehicle(AGV) IIT Kharagpur</title>
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.ico">
-	
-	<!-- Styles -->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css">
-	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen"/>
-	<link rel="stylesheet" href="css/color-scheme/blue.css">
-	<link rel="stylesheet" href="css/jquery-ui.css">
-
-	<!-- Base JS -->
-	<script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/main.js"></script>
-	
-	
-	<!-- Prety photo -->
-	<script src="js/jquery.prettyPhoto.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("a[rel^='prettyPhoto']").prettyPhoto();
-		});
-	</script>
-</head>
-
-<body>
-
-<div class="main">
-
-	<!-- HEADER 
-	============================================= -->
-	<div class="header header-transparent header-alt">
-		<div class="layout clearfix">
-			<div class="mob-layout wrap-left">
-				<!-- Logo -->
-				<a href="./index.html" class="logo"><img src="img/agv.png" alt=""></a>
-				<!-- Mobile Navigation Button -->
-				<div class="btn-menu icon-reorder"></div>
-
-				<!-- Search Form -->
-				<form action="/" class="b-search-form">
-					<div class="input-wrap">
-						<input type="text" placeholder="Search..">
-					</div>
-				</form>
-				<!-- End Search Form -->
-
-				<!-- Navigation -->
-				<ul class="menu">
-					<!-- Item 1 -->
-					<li class="has-mega">
-						<a href="index.html">Home</a>
-					</li>					
-
-					<li>
-						<a href="projects.html">Projects</a>
-					</li>
-
-					<li>
-						<a href="publications.html">Publications</a>
-					</li>
-					
-					<!-- Item 2 - MegaMenu -->
-					<li class="has-mega">
-						<a href="people.html" class="active">People</a>
-					</li>
-
-					<!-- Item x - MegaMenu -->
-					<li class="has-mega">
-						<a href="recruitment.html">Recruitment</a>
-					</li>
-
-					<!-- Item y - MegaMenu -->
-					<li class="has-mega">
-						<a href="sponsorship.html">Sponsorship</a>
-					</li>
-
-					<!-- Item 3 -->
-					<li>
-						<a href="blog.html">Blog</a>
-					</li>
-
-					<!-- Item 4 -->
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
 
 
-				</ul>
-			</div>
-		</div>
-		<!-- Mobile Navigation -->
-		<ul class="mob-menu">
-			<!-- Item 1 -->
-			<li>
-				<div>
-					<a href="index.html">Home</a>
-					<span class="btn-submenu"></span>
-				</div>
-			</li>					
-
-			<li>
-				<div>
-					<a href="index.html">Projects</a>
-					<span class="btn-submenu"></span>
-				</div>
-			</li>
-
-			<li>
-				<div>
-					<a href="index.html">Publications</a>
-					<span class="btn-submenu"></span>
-				</div>
-			</li>
-
-			<!-- Item 2 -->
-			<li>
-				<div>
-					<a href="about-us.html">People</a>
-					<span class="btn-submenu"></span>
-				</div>
-			</li>
-			<!-- End Item 2 -->
-			<!-- Item 3 -->
-			<li>
-				<div>
-					<a href="blog.html">Blog</a>
-					<span class="btn-submenu"></span>
-				</div>
-			</li>
-			<!-- End Item 3 -->
-			<!-- Item 4 -->
-			<li>
-				<div>
-					<a href="contact.html">Contact</a>
-					<span class="btn-submenu"></span>
-				</div>
-			</li>
-			<!-- End Item 4 -->
-		</ul>
-		<!-- End Mobile Navigation -->
-	</div>
-	<!-- END HEADER 
-	============================================= -->
-
+	<?php
+ 		include 'includes/header.php';
+	?>
 
 
 	<!-- CONTENT 
 	============================================= -->
 	<div class="content">
 		<div class="layout">
-			<h2>Faculty</h2>
+			<center><h2>Faculty</h2></center>
 			<div class="row">
 				<div class="b-member m-quad row-item col-1_3">
 					<div class="member-photo">
-						<img src="professor/dc.jpg" alt="">
+						<img src="img/team/team-1.jpg" alt="">
 						<ul class="b-social">
 							<li><a class="fb" href="#"><i class="icon-facebook"></i></a></li>
 							<li><a class="tw" href="#"><i class="icon-twitter"></i></a></li>
@@ -176,13 +23,12 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							 John Doe
+							 Prof. Debashish Chakrabarty
 						</div>
 						<div class="member-position">
-							 President & Founder
+							 Associate Professor<br> Mining Engineering
 						</div>
 					</div>
-					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
 				</div>
 				<div class="b-member m-quad row-item col-1_3">
 					<div class="member-photo">
@@ -194,13 +40,12 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							Jane Doe
+							Prof. Partha Pratim Chakrabarty
 						</div>
 						<div class="member-position">
 							CEO
 						</div>
 					</div>
-					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
 				</div>
 				<div class="b-member m-quad row-item col-1_3">
 					<div class="member-photo">
@@ -214,13 +59,12 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							 John Doe
+							 Prof. Partha Pratim Das
 						</div>
 						<div class="member-position">
 							 President & Founder
 						</div>
 					</div>
-					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
 				</div>
 				<div class="row">
 				<div class="b-member m-quad row-item col-1_3">
@@ -235,13 +79,12 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							 John Doe
+							 Prof. Surjya Kanta Pal
 						</div>
 						<div class="member-position">
 							 President & Founder
 						</div>
 					</div>
-					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
 				</div>
 				<div class="b-member m-quad row-item col-1_3">
 					<div class="member-photo">
@@ -253,13 +96,12 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							Jane Doe
+							Prof. Dilip Kumar Patihar
 						</div>
 						<div class="member-position">
 							CEO
 						</div>
 					</div>
-					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
 				</div>
 				<div class="b-member m-quad row-item col-1_3">
 					<div class="member-photo">
@@ -273,18 +115,18 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							 John Doe
+							 Prof. Manoranjan Sinha
 						</div>
 						<div class="member-position">
-							 President & Founder
+							 Associate Professor<br> Aerospace Engineering
 						</div>
 					</div>
-					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
 				</div>
 			</div>
-			<h2>Advisors</h2>
+			<center><h2>Advisors</h2></center>
 			<div class="row">
-				<div class="b-member m-quad row-item col-1_2">
+				<center>
+				<div class="b-member m-quad row-item col-1_3">
 					<div class="member-photo">
 						<img src="img/team/team-1.jpg" alt="">
 						<ul class="b-social">
@@ -296,15 +138,12 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							 John Doe
-						</div>
-						<div class="member-position">
-							 President & Founder
+							 Prof. Phani Bhushan
 						</div>
 					</div>
-					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
+					
 				</div>
-				<div class="b-member m-quad row-item col-1_2">
+				<div class="b-member m-quad row-item col-1_3">
 					<div class="member-photo">
 						<img src="img/team/team-2.jpg" alt="">
 						<ul class="b-social">
@@ -314,16 +153,15 @@
 					</div>
 					<div class="member-meta">
 						<div class="member-name">
-							Jane Doe
-						</div>
-						<div class="member-position">
-							CEO
+							Prof. Manoj Kumar Mondal
 						</div>
 					</div>
 					<p>Inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enims sadips ipsums un</p>
 				</div>
+				</center>
 			</div>
-<div class="layout">
+		<center><h2>Students</h2></center>
+		<div class="layout">
 			<ul class="b-filter-list">
 				<li data-filter="*" class="active">All</li>
 				<li data-filter=".webdesign">Web Design</li>
@@ -347,7 +185,7 @@
 				<div class="row-item col-1_4 identity photography tehnology">
 					<div class="work">
 						<a href="#" class="work-image">
-						<img src="team/aashay.jpg" alt="">
+						<img src="img/port/smiling.jpg" alt="">
 						<div class="link-overlay icon-chevron-right">
 						</div>
 						</a>
@@ -456,33 +294,7 @@
 
 	
 
-		<!-- FOOTER 
-	============================================= -->
-	<div class="footer">
-		
-		<!-- Copyright Area -->
-		<div class="b-copyright">
-			<div class="layout">
-				<!-- Copyright Text -->
-				<span class="copy">Made by <a href="#">NK</a></span>
-				<!-- Social Icons -->
-				<ul class="b-social bot">
-					<li>Follow Us:</li>
-					<li><a class="fb" href="#"><i class="icon-facebook"></i></a></li>
-					<li><a class="yt" href="#"><i class="icon-youtube"></i></a></li>
-					<li><a class="lin" href="#"><i class="icon-linkedin"></i></a></li>
-					<li><a class="gh" href="#"><i class="icon-github-alt"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- END FOOTER 
-	============================================= -->
-	
-</div>
-<!-- END MAIN 
-============================================= -->
 
-
-</body>
-</html>
+	<?php
+ 		include 'includes/footer.php';
+	?>
