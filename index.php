@@ -4,6 +4,7 @@
  		include 'includes/header.php';
 	?>
 
+
 	<!-- REVOLUTION SLIDER
 	============================================= -->
 	<div class="fullwidthbanner-container top-shadow">
@@ -83,86 +84,37 @@
 			<div class="row">
 			<div class="row-item col-1_2">
 					<h3 class="lined margin-20"><i class="icon-bullhorn"></i>News</h3>
-					<div class="b-news">
-						<div class="news-date">
-							<div class="date-day">
-								 21
-							</div>
-							<div class="date-mounth">
-								 jun
-							</div>
-							<div class="date-year">
-								 2017
-							</div>
-						</div>
-						<div class="news-title">
-							<a href="#">Quis autem vel eum iure reprehenderit, qui in.</a>
-						</div>
-						<div class="news-excerpt">
-							 Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...
-						</div>
-					</div>
-					<div class="b-news" style="border-bottom: none;">
-						<div class="news-date">
-							<div class="date-day">
-								 19
-							</div>
-							<div class="date-mounth">
-								 jun
-							</div>
-							<div class="date-year">
-								 2017
-							</div>
-						</div>
-						<div class="news-title">
-							<a href="#">Vel illum, qui dolorem eum fugiat.</a>
-						</div>
-						<div class="news-excerpt">
-							 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa...
-						</div>
-					</div>
+					<?php
+                            $sql="SELECT * FROM aupdate WHERE type = '1' ";
+                            $records=mysqli_query($con, $sql);
+                            while($news=mysqli_fetch_assoc($records)) 
+                            {
+								echo '<div class="b-news">';
+								echo '<div class="news-date"><div class="date-day">' .date('j', $news['adate']). '</div>';
+								echo '<div class="date-mounth">' .date('M', $news['adate']). '</div>';
+								echo '<div class="date-year">' .date('Y', $news['adate']). '</div></div>';
+								echo "<div class=\"news-title\"><a href=' " .$news['link']. " '>" .$news['headline']. "</a></div>";
+								echo '<div class="news-excerpt">' .$news['descript']. '</div></div>';
+							}
+							?>
+					
 
 			</div>
 			<div class="row-item col-1_2">
 					<h3 class="lined margin-20"><i class="icon-bullhorn"></i>Announcements</h3>
-					<div class="b-news">
-						<div class="news-date">
-							<div class="date-day">
-								 21
-							</div>
-							<div class="date-mounth">
-								 jun
-							</div>
-							<div class="date-year">
-								 2017
-							</div>
-						</div>
-						<div class="news-title">
-							<a href="#">Quis autem vel eum iure reprehenderit, qui in.</a>
-						</div>
-						<div class="news-excerpt">
-							 Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...
-						</div>
-					</div>
-					<div class="b-news" style="border-bottom: none;">
-						<div class="news-date">
-							<div class="date-day">
-								 19
-							</div>
-							<div class="date-mounth">
-								 jun
-							</div>
-							<div class="date-year">
-								 2017
-							</div>
-						</div>
-						<div class="news-title">
-							<a href="#">Vel illum, qui dolorem eum fugiat.</a>
-						</div>
-						<div class="news-excerpt">
-							 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa...
-						</div>
-					</div>
+					<?php
+                            $sql="SELECT * FROM aupdate WHERE type = '2' ";
+                            $records=mysqli_query($con, $sql);
+                            while($news=mysqli_fetch_assoc($records)) 
+                            {
+								echo '<div class="b-news">';
+								echo '<div class="news-date"><div class="date-day">' .date('j', $news['adate']). '</div>';
+								echo '<div class="date-mounth">' .date('M', $news['adate']). '</div>';
+								echo '<div class="date-year">' .date('Y', $news['adate']). '</div></div>';
+								echo "<div class=\"news-title\"><a href=' " .$news['link']. " '>" .$news['headline']. "</a></div>";
+								echo '<div class="news-excerpt">' .$news['descript']. '</div></div>';
+							}
+							?>
 			</div>	
 			</div>
 		</div>		

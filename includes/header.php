@@ -1,3 +1,11 @@
+<?php
+session_start();
+require 'admin/db_connect.php';
+
+
+$con = mysqli_connect($host,$user,$pass,$db);
+/*mysqli_select_db($db);*/
+?>
 <!DOCTYPE html>
 
 <html>

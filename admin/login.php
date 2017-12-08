@@ -1,52 +1,35 @@
-<<<<<<< HEAD
 <?php
 session_start();
 ?>
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminAGV | Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
 
-    <title>Autonomous Ground Vehicle(AGV) IIT Kharagpur</title>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/prettyPhoto.css">
-    <link rel="stylesheet" type="text/css" href="../css/settings.css" media="screen"/>
-    <link rel="stylesheet" href="../css/color-scheme/blue.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
-
-    <!-- Base JS -->
-    <script src="../js/jquery-1.9.1.min.js"></script>
-    <script src="../js/jquery-ui.js"></script>
-    <script src="../js/jquery.sticky.js"></script>
-    <script src="../js/stellar.js"></script>
-    <script src="../js/main.js"></script>
-
-
-    <!--Form-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-
-    <!-- Prety photo -->
-    <script src="../js/jquery.prettyPhoto.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("a[rel^='prettyPhoto']").prettyPhoto();
-        });
-    </script>
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-
-<body class="main">
 
 <?php
  require 'db_connect.php';
@@ -88,177 +71,51 @@ if(!isset($_SESSION['admin'])){
 
 ?>
 
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../index.php"><b>Admin</b>AGV</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Sign in to start your session</p>
 
-
-
-   <div class="content">
-        <div class="layout">
-            <div class="row">
-                <center>
-                <div class="row-item col-1_3">
-                    <center><h3>Welcome to Admin Panel</h3>
-                    <p>Login in</p></center>
-                    <!-- Login -->
-                    <form class="form-horizontal sys-login" method="POST" action="" name="form1" id="form1">
-                        <?php if(isset($msg)){
+    <form method="POST" action="" name="form1" id="form1">
+        <?php if(isset($msg)){
                         echo $msg;
                         }
                         ?>  
-                        <ul>
-                        <div class="form-group">
-                            <label>Password <span class="required">*</span></label>
-                            <input type="text" name="pass" maxlength="20" class="field-long" required />
-                            </div>
-                        
-                        <div class="form-group">
-                        <div class="col-sm-10">  
-                            <input class="btn colored" style="width:90px;" type="submit" id="login" name="login" alt="login" value="Log In" />
-                            
-                            </div>
-                            </div>
-                        </li>
-                    </ul>   
-                    </form> 
-                            <!-- Login -->
-
-                </div>
-                </center>
-            </div>
+      <div class="form-group has-feedback">
+        <input name="pass" maxlength="20" required type="password" class="form-control" placeholder="Password">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <!-- /.col -->
+        <div class="col-xs-4">
+          <button type="submit" id="login" name="login" alt="login" value="Log In" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
-    </div>
+        <!-- /.col -->
+      </div>
+    </form>
 
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' // optional
+    });
+  });
+</script>
 </body>
-
-=======
-<?php
-session_start();
-?>
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-    <title>Autonomous Ground Vehicle(AGV) IIT Kharagpur</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/prettyPhoto.css">
-    <link rel="stylesheet" type="text/css" href="../css/settings.css" media="screen"/>
-    <link rel="stylesheet" href="../css/color-scheme/blue.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
-
-    <!-- Base JS -->
-    <script src="../js/jquery-1.9.1.min.js"></script>
-    <script src="../js/jquery-ui.js"></script>
-    <script src="../js/jquery.sticky.js"></script>
-    <script src="../js/stellar.js"></script>
-    <script src="../js/main.js"></script>
-
-
-    <!--Form-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-
-    <!-- Prety photo -->
-    <script src="../js/jquery.prettyPhoto.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("a[rel^='prettyPhoto']").prettyPhoto();
-        });
-    </script>
-</head>
-
-<body class="main">
-
-<?php
- require 'db_connect.php';
-
-$_SESSION['facu'] = 'facu';
-$_SESSION['admin'] = 'admin';
-
-$con = mysqli_connect($host,$user,$pass,$db);
-if(!$con){
-    die("can not connect" . mysqli_connect_error());
-    } 
-
-
-if(isset($_POST['login'])){
-    if(isset($_POST['pass'])){
-        $password = $_POST['pass'];
-        if($password== $admin){
-            $_SESSION['menu'] = 'menu';
-            $redirect_page = "admin.php";
-            header('Location: '.$redirect_page);
-            }
-        else{
-            $_SESSION['error'] = 'error';
-            echo "<strong><center>Wrong Credentials</center></strong>";
-            }
-    }
-}
-
-
-if(!isset($_SESSION['admin'])){
-                    $redirect = "login.php";
-                    header('Location: '.$redirect);
-                    unset($_SESSION['admin']);
-                    exit();
-                    }
-                    
-                    $_SESSION['logout'] = 'logout';
-                    
-
-?>
-
-
-
-
-   <div class="content">
-        <div class="layout">
-            <div class="row">
-                <center>
-                <div class="row-item col-1_3">
-                    <center><h3>Welcome to Admin Panel</h3>
-                    <p>Login in</p></center>
-                    <!-- Login -->
-                    <form class="form-horizontal sys-login" method="POST" action="" name="form1" id="form1">
-                        <?php if(isset($msg)){
-                        echo $msg;
-                        }
-                        ?>  
-                        <ul>
-                        <div class="form-group">
-                            <label>Password <span class="required">*</span></label>
-                            <input type="text" name="pass" maxlength="20" class="field-long" required />
-                            </div>
-                        
-                        <div class="form-group">
-                        <div class="col-sm-10">  
-                            <input class="btn colored" style="width:90px;" type="submit" id="login" name="login" alt="login" value="Log In" />
-                            
-                            </div>
-                            </div>
-                        </li>
-                    </ul>   
-                    </form> 
-                            <!-- Login -->
-
-                </div>
-                </center>
-            </div>
-        </div>
-    </div>
-
-</body>
-
->>>>>>> 14760c4bb0aaba1340216985a1db64b3770e5792
-</html>
